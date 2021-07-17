@@ -20,7 +20,7 @@ var count=1;
         fun(obj);
         setItems(obj);
       });
-  }, []);
+  }, );
 
   const fun = (obj) => {
     let count = 1;
