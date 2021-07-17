@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 
 export default function NestedList() {
   const [items, setItems] = useState([]);
-  const [num,setnum]=useState([]);
 var count=1;
   var arr1 = [];
   var arr2 = [];
@@ -33,7 +32,6 @@ var count=1;
         if (Menu[j].type === "sectionheader") {
           let child = Menu[j].children;
           arr2.push(count);
-          setnum(count);
           queue.push(child);
           while (queue.length !== 0) {
             let front = queue[0];
